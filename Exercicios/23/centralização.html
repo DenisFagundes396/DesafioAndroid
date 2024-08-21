@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Caixas</title>
+    <style>
+        #car{
+            width: 200px;
+            height: 200px;
+            background-image: url(imagens/mycar12Pro_2.png);
+            background-repeat: no-repeat;
+            background-color: antiquewhite;
+            background-position: center center;
+            margin: auto;
+            background-size: 80% 80%;
+            position: relative;
+        }
+        #AI{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 25%;
+            top: 10%;
+            transform: translate(-25px, -25px);
+            background: url(imagens/statusAmarelo65.png) center center ;
+        }
+        #RS{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 10%;
+            top: 75%;
+            transform: translate(-25px, -25px);
+        }
+
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <section id="car">
+        <article id="AI"></article>
+        <article id="RS">
+            <img src="imagens/statusVerde.png" alt="">
+        </article>
+        <article id="DT"></article>
+        <article id="TS"></article>
+    </section>
+</body>
+</html>
