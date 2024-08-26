@@ -33,12 +33,35 @@ header a, footer a{
 
 }
 
-header a:hover, {
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
 footer {
     background-color: black;
     text-align: center;
     color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+section{
+    padding-top: 50px;
     padding-bottom: 50px;
+}
+section{
+    height:550px;
+
+}
+
+.imagem{
+    color: white;
+}
+
+#joana{
+    background-color: aqua;
+    background-image: url(background001.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
