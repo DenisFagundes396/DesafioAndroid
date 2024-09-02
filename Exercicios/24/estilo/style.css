@@ -72,6 +72,8 @@ section{
 
 .imagem{
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0,0,0,0.5);
+    background-size: cover;
 }
 
 #joana{
@@ -79,14 +81,12 @@ section{
     background-image: url(background001.jpg);
     background-position: center right;
     background-attachment: fixed;
-    background-size: cover;
     background-repeat: no-repeat;
 }
 #papel{
     background-image: url(background002.jpg);
     background-position: center center;
     background-attachment: fixed;
-    background-size: cover;
     background-repeat: no-repeat;
     
 }
