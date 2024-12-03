@@ -1,0 +1,64 @@
+<!DOcTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+</head>
+<title>Estudo de Iframe</title>
+<style>
+    iframe.Top{
+        border: 2px solid blue;
+    }
+</style>
+<header></header>
+<body>
+    <h1>TEstando o uso de um Iframe</h1>
+    <p>Acessando o site do <a href="https://www.cursoemvideo.com" target="_blank">Curso</a> wem para aprender</p>
+    <p>Acessando o site do 
+        
+        <iframe src="https://www.cursoemvideo.com" frameborder="1"></iframe>
+
+        wem para aprender</p>
+
+    <p>Site do google é  
+        <iframe src="https://www.youtube.com/watch?v=5Cn-vuFEbBs" 
+                frameborder="0"
+                width="560" height="315"
+                title="YouTube video player" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                sandbox="allow-scripts allow-same-origin"
+                referrerpolicy="strict-origin-when-cross-origin" ></iframe> assim</p>
+
+    <p>Ifrmae do yotube 
+
+        <iframe class="Top"
+        width="560" height="315" 
+        src="https://www.youtube.com/embed/Fc2QnTUetGA?si=B2cgQQ1xJUdlbj4Z" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen> <!-- Habilitar tele inteira-->
+    </iframe>
+    </p>
+    <h2>Parametros </h2>
+    <h3>Referrerpolicy</h3>
+    <p>no-referrer-when-downgrade: O cabeçalho Referer será enviado em requisições seguras (HTTPS para HTTPS), mas será omitido em requisições de uma página HTTPS para uma página HTTP (o que é considerado um "downgrade" de segurança).</p>
+    <p>Origin: O referer enviará apenas o dominio, não o caminho completo</p>
+    <p>origin-when-cross-origin: um para,mentro de proteção quando ivasões do tipo cross-origin. Este proteje o envio do caminho para outro domínio, mas ser for mesmo dominio irá enviar o todo o caminho</p>
+   <p></p>
+   
+    <p>Mapa do google
+    
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10079.252550105675!2d4.346287877937932!3d50.834625046687066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c5c863c3dc6d%3A0xc1e7d3c3a314f67d!2sMANGO!5e0!3m2!1spt-PT!2sbe!4v1733174189000!5m2!1spt-PT!2sbe" 
+    width="600" height="450" borde="1px solide blue" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</p>
+
+</body>
+
+</html>
