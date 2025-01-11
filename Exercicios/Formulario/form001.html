@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fomulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p><abbr title="Seu nome 1 nome"><label for="inome">Nome:</label></abbr> <input type="text" name="Nome" id="inome" required></p>
+        <p><label for="iSrobrenome">Sobrenome:</label> <input type="text" name="Sobrenome" id="iSobrenome"></p>
+        <p><label for="iche">Top</label> <input type="checkbox" name="che" id="iche"></p>
+        <p><input type="submit" value="Enviar"></p>
+        <p><label for="emai">e-mail:</label><input type="email" name="" id="email" autocomplete="email"></p>
+        <p><input type="number" min="12" value="155" name="" id=""></p>
+        <input type="radio" name="" id="">
+       <p> <input type="range" max="5" min="2" name="" id=""></p>
+       <p><input type="hidden" name=""></p>
+       <p><label for="Pas">Senha:</label><input type="password" name="" id="Pas" required minlength="8" autocomplete="new-password" size="10"></p>
+       <p><label for="cal">Calendário:</label><input type="month" name="" id="cal"></p>
+    </form>
+</body>
+</html>
