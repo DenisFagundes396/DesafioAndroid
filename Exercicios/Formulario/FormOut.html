@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fomulário Output</h1>
+    <fieldset>
+        <legend>Dados</legend>
+        <form action="cadastro.php" method="get">
+            <p><label for="iN1">Número 1:</label><input type="number" name="N1" id="iN1" min="0" max="50" required oninput="isoma.innerHTML = Number(iN1.value)+Number(iN2.value)"></p>
+            <p><label for="iN2">Número 2:</label><input type="number" name="N2" id="iN2" min="0" max="50" required oninput="isoma.innerHTML = Number(iN1.value)+Number(iN2.value)"></p>
+            <p>
+                Soma:<output id="isoma">0</output>
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+    </fieldset>
+
+</body>
+</html>
