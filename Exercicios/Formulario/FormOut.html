@@ -10,11 +10,13 @@
     <fieldset>
         <legend>Dados</legend>
         <form action="cadastro.php" method="get">
-            <p><label for="iN1">Número 1:</label><input type="number" name="N1" id="iN1" min="0" max="50" required oninput="isoma.innerHTML = Number(iN1.value)+Number(iN2.value)"></p>
+            <p><label for="iN1">Número 1:</label><input type="number" name="N1" id="iN1" min="0" max="50" required oninput="isoma.innerHTML = Number(iN1.value)+Number(iR1.value)"></p>
             <p><label for="iN2">Número 2:</label><input type="number" name="N2" id="iN2" min="0" max="50" required oninput="isoma.innerHTML = Number(iN1.value)+Number(iN2.value)"></p>
             <p>
                 Soma:<output id="isoma">0</output>
             </p>
+            <p><input type="range" name="R1" id="iR1" max="10" min="0" step="1" value="0" oninput="iRange.innerHTML = Number(iR1.value)">
+                <output name="" id="iRange">0</output></p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </form>

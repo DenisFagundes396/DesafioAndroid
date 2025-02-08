@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+*{
+    background-color: #1b1b1b;
+    color: aliceblue;
+}
+
+div > h1{
+    color: aliceblue;
+    text-align: center;
+}
+footer > div{
+    display: flex;
+}
