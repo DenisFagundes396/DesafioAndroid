@@ -9,6 +9,13 @@ div > h1{
     color: aliceblue;
     text-align: center;
 }
-footer > div{
+#planos {
+    display: flex;
+}     
+footer {
     display: flex;
 }
+ol{
+    
+    list-style: none;
+} 
