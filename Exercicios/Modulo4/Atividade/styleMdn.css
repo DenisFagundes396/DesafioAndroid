@@ -5,12 +5,20 @@
     color: aliceblue;
 }
 
-div > h1{
+div > h1, h2, p{
     color: aliceblue;
     text-align: center;
 }
 #planos {
     display: flex;
+    justify-content: center;
+}
+.plano{
+    background-color: green;
+    border: 1px solid red;
+    width:200px ;
+    margin-right: 5px;
+    margin-left: 5px;
 }     
 footer {
     display: flex;
