@@ -11,12 +11,20 @@ div > h1, h2, p{
 
     text-align: center;
 }
+#your{
+    background-color: rgba(128, 128, 128, 0.431);
+    background-image: url(imagens/mandala.png);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    
+    height: 400px;
+}
 #planos {
     display: flex;
     justify-content: center;
 }
 .plano {
-    background-color: #00d061;
+    
     border-radius: 10px;
     color: #1b1b1b;
     width:200px ;
@@ -24,16 +32,44 @@ div > h1, h2, p{
     margin-left: 5px;
     padding-top: 0px;
     list-style-type: decimal;
+    justify-content: left;
+}
+#Core{
+    background-color: #00d061;
+}
+#MDNPlus{
+    background-color: #8CB4FF;
+}
+#MDNSuppot{
+    background-color:#FF97A0;
 }
 .plano > ul > li> a, a{
     color: #1b1b1b;
 } 
 .titulo{
-    background-color: #006830;
+    
     color: aliceblue;
     margin-top: -16px;
     padding-top: 10px;
     border-radius: 10px 10px 0px 0px;
+    text-align: center;
+}
+#TCore{
+    background-color: #006830;
+}
+#TMdn{
+    background-color: #465A7F;
+}
+#TMds{
+    background-color: #7F4B50;
+}
+.fechar{
+    background-color: #1b1b1b;
+    color: aliceblue;
+    text-align: center;
+    width: 160px;
+    margin: auto;
+    border-radius: 20px;
 }
 footer {
     display: flex;
