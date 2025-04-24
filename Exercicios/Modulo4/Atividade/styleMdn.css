@@ -1,25 +1,40 @@
 @charset "UTF-8";
 
 *{
+   
+}
+body{
     background-color: #1b1b1b;
     color: aliceblue;
 }
-
 div > h1, h2, p{
-    color: aliceblue;
+
     text-align: center;
 }
 #planos {
     display: flex;
     justify-content: center;
 }
-.plano{
-    background-color: green;
-    border: 1px solid red;
+.plano {
+    background-color: #00d061;
+    border-radius: 10px;
+    color: #1b1b1b;
     width:200px ;
     margin-right: 5px;
     margin-left: 5px;
-}     
+    padding-top: 0px;
+    list-style-type: decimal;
+}
+.plano > ul > li> a, a{
+    color: #1b1b1b;
+} 
+.titulo{
+    background-color: #006830;
+    color: aliceblue;
+    margin-top: -16px;
+    padding-top: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
 footer {
     display: flex;
 }
