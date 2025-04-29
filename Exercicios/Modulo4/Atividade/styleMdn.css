@@ -3,9 +3,17 @@
 *{
    
 }
+
 body{
     background-color: #1b1b1b;
     color: aliceblue;
+    /* font:  normal normal 48px "Inter", sans-serif; */
+    
+}
+
+#menu{
+    height: 80px;
+    border-bottom-color: 10px solid white;
 }
 div > h1, h2, p{
 
