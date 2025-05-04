@@ -2,49 +2,70 @@
 
 
 :root{
+    /* Cores */
     --box1:#1b1b1b;
     --box2:#313131;
     --font1:#CDCDCD;
     --font2:#FFFFFF;
     --font3: #1B1B1B;
-    --fontDestaque:#FF97A0;
+    --fontDestaqueZ:underline solid  #FF97A0;
+    --fontDestaqueY:3px;
     --bordas:#7b7b7b;
+    /* Fontes */
+    --texto1:normal 600 48px 'Inter', sans-serif;
+    --texto2:normal 250 27px 'Inter', sans-serif;
 }
 
 body{
     background-color: #1b1b1b;
     color: aliceblue;
-
 }
 
 #menu{
     height: 60px;
     border-bottom: 0.1px solid;
-    border-top: 0.5px solid; ;
     border-color:  var(--bordas);
 }
 div > h1, h2, p{
 
-    text-align: center;
+    /* text-align: center; */
 }
 #your{
-    background-image: linear-gradient(to bottom, #1b1b1bc1, #1b1b1bc1), url('imagens/mandala.png');;
-    height: 400px;
+    background-image: linear-gradient(to bottom, #1b1b1bc1, #1b1b1bc1), url('imagens/mandala.png');
+    height: 350px;
     /* width: 1300px; */
     background-size: contain;
     background-repeat: no-repeat;
     background-color: var(--box1);
-    background-position: 90%;
+    background-position: 80%;
+    border: 1px solid red;
+}
+#your2{
+    border: 1px solid blue;
+    width: 600px;
+    margin: auto;
+    vertical-align:middle;
+}
+.TxtDest{
+    text-decoration: var(--fontDestaqueZ);
+    text-decoration-thickness: var(--fontDestaqueY);
+    /* font: var(--texto1); */
+}
+#your2 > h2{
+    font: var(--texto2);
+    color: #CDCDCD;
+    margin-bottom: -1%;
 }
 
 .botYour{
     background-color: var(--font2);
-    width: 200px;
-    height: 30px;
+    width: 240px;
+    height: 45px;
     display: inline-block;
     border-radius: 5px;
-    margin-right: 10px;
+    margin-right: 20px;
     text-align: center;
+   
 }
 
 #planos {
