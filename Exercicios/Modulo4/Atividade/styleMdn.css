@@ -14,13 +14,11 @@
     --bordas:#7b7b7b;
     /* Fontes */
     --texto1:normal 600 48px 'Inter', sans-serif;
-    --texto2:normal 250 27px 'Inter', sans-serif;
-    --texto3:normal 600 14px 'Inter', sans-serif;
-}
-
-body{
-    background-color: #1b1b1b;
-    /* color: aliceblue; */
+    --texto2:normal 250 5vh 'Inter', sans-serif;
+    --texto3:normal 600 12px 'Inter', sans-serif;
+    --textoParagrafo:normal normal 16px 'Inter', sans-serif;
+    --textoH2:normal normal 28px 'Inter', sans-serif;
+    
 }
 
 #menu{
@@ -28,9 +26,13 @@ body{
     border-bottom: 0.1px solid;
     border-color:  var(--bordas);
 }
-div > h1, h2, p{
 
-    /* text-align: center; */
+body{
+    background-color: #1b1b1b;
+    /* color: aliceblue; */
+}
+main>:nth-child(2n){
+    background-color: var(--box2)
 }
 #your{
     background-image: linear-gradient(to bottom, #1b1b1bc1, #1b1b1bc1), url('imagens/mandala.png');
@@ -40,11 +42,9 @@ div > h1, h2, p{
     background-repeat: no-repeat;
     background-color: var(--box1);
     background-position: 80%;
-    border: 1px solid red;
 }
-#your2{
-    border: 1px solid blue;
-    width: auto;
+#your2{;
+    width: 524px;
     margin: auto;
     vertical-align:middle;
 }
@@ -56,35 +56,55 @@ div > h1, h2, p{
 #your2 > h2{
     font: var(--texto2);
     color: #CDCDCD;
-    margin-bottom: -1%;
+    margin-bottom:1%;
 }
 
 .botYour{
+    display: inline-block;
     width: 240px;
     height: 45px;
-    display: inline-block;
     border-radius: 5px;
-    margin-right: 20px;
-    text-align: center;
+    margin-right: 10px;
     font: var(--texto3);
 }
 #botYour1{
     background-color: var(--font2);
+    position: relative;
+
 }
 #botYour2{
     color: var(--font2);
     border: 2px solid var(--box3);
+    position: relative;
+
+}
+.botYourTxt{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.assunto{
+    height: 604px;
+    color: var(--font2);
+    text-align: center;
+    font: var(--textoParagrafo);
 }
 
 #planos {
     display: flex;
     justify-content: center;
 }
+.TxtDestCor{
+    color: var(--box3);
+    font: var(--texto3);
+    letter-spacing: 1.5px;
+}
 .plano {
     
     border-radius: 10px;
     color: var(--font3);
-    width:200px ;
+    width:100vw ;
     margin-right: 5px;
     margin-left: 5px;
     padding-top: 0px;
@@ -102,6 +122,8 @@ div > h1, h2, p{
 }
 .plano > ul > li> a, a{
     color: var(--font3);
+    text-decoration-thickness:var(--fontDestaqueZ) ;
+    
 } 
 .titulo{
     
