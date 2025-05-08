@@ -33,7 +33,17 @@
     border-bottom: 0.1px solid;
     border-color:  var(--bordas);
     z-index: 2;
+
 }
+#menu > ol{
+    display: inline-flex;
+    
+}
+#menu > ol > li > a{
+    font: var(--textoParagrafo);
+    color: var(--font1);
+    padding: 10px;
+    }
 
 body{
     background-color: #1b1b1b;
