@@ -24,7 +24,7 @@
     
 }
 
-#menu{
+header{
     background-color: var(--box1);
     position: fixed;
     padding-top: 0px;
@@ -33,17 +33,56 @@
     border-bottom: 0.1px solid;
     border-color:  var(--bordas);
     z-index: 2;
+}
+#containerMenu{
+    display: flex;
+}
+#containernavegação{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+}
+#imgLogo{
+    display: inline-block;
+    width: 150px;
+    height: 60px;
+    background-image: url(imagens/mdn.jpg);
+    background-size: 80%;
+    background-repeat:no-repeat;
+}
+#menus > ol{
+    display: inline-flex;
 
 }
-#menu > ol{
-    display: inline-flex;
-    
-}
-#menu > ol > li > a{
+#menus > ol > li > a{
     font: var(--textoParagrafo);
     color: var(--font1);
     padding: 10px;
+    text-decoration: none;
     }
+#logBuscConf{
+    display: flex;
+    padding-left:160px;
+}
+#ajuste{
+    display: flex;
+    align-items: center;
+    background-color: var(--box1);
+    color: var(--font1);
+    font: var(--texto12);
+}
+#iconBotAju{
+    background-image: url(imagens/meia\ lua.jpg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+}
+#log{
+    
+}
 
 body{
     background-color: #1b1b1b;
