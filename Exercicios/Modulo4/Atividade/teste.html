@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+  .container {
+   
+    display: flex;
+    width: 1000px;
+
+  }
+
+  .div1, .div3, .div4 {
+    height: 100px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  }
+
+  .div1 { width: 550px; background: #f2a65e; }
+  .div3 { min-width: 120px; background: #45c4b0; }
+  .div4 { min-width: 130px; background: #2d98da; }
+
+  /* div2 com position absolute */
+  .div2 {
+    
+    /* left: 560px; Define sua posição inicial */
+    width: 100px;
+    height: 100px;
+    background: #ef4a4a;
+    transition: width 0.3s;
+  }
+
+  /* Expande para a direita */
+  .div2:hover {
+    width: 560px;
+
+  }
+</style>
+
+<div class="container">
+  <div class="div1">1</div>
+  <div class="div2">2</div>
+  <div class="div3">3</div>
+  <div class="div4">4</div>
+</div>
+</body>
+</html>

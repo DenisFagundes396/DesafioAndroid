@@ -8,6 +8,7 @@
     --box1:#1b1b1b;
     --box2:#313131;
     --box3:#FF97A0;
+    --box4:#461E25;
     --font1:#CDCDCD;
     --font2:#FFFFFF;
     --font3: #1B1B1B;
@@ -21,7 +22,9 @@
     --texto3:normal 600 12px 'Inter', sans-serif;
     --textoParagrafo:normal normal 16px 'Inter', sans-serif;
     --textoH2:normal normal 28px 'Inter', sans-serif;
-    
+    /*bordas*/
+    --bordtest:1px solid red;
+
 }
 
 header{
@@ -40,8 +43,9 @@ header{
 #containernavegação{
     display: flex;
     align-items: center;
-
+    border: 1px solid blue;
     width: 100%;
+    gap: 10px;
 }
 #imgLogo{
     display: inline-block;
@@ -51,42 +55,109 @@ header{
     background-size: 80%;
     background-repeat:no-repeat;
 }
+#menus{
+    border: 1px solid green;
+    width: 90%;
+}
 #menus > ol{
     display: inline-flex;
+    align-items: center;
 
 }
-#menus > ol > li > a{
+#menus > ol > li > button > a{
     font: var(--textoParagrafo);
     color: var(--font1);
     padding: 10px;
     text-decoration: none;
     }
+
+.botmenu{
+    border: none;
+    background-color: var(--box1);
+}
+
 #logBuscConf{
     display: flex;
-    padding-left:160px;
+    justify-content:center;
+    border: 2px solid white;
 }
 #ajuste{
+    position: relative;
     display: flex;
     align-items: center;
     background-color: var(--box1);
     color: var(--font1);
     font: var(--texto12);
+    border: none;
+    cursor: pointer;
+    border: var(--bordtest);
 }
 #iconBotAju{
     background-image: url(imagens/meia\ lua.jpg);
     background-size: 60%;
     background-repeat: no-repeat;
-    display: inline-flex;
+    display: inline-block;
+    margin-right: -8px;
     width: 30px;
-    height: 30px;
+    height: 20px;
+}
+#seach{
+    border-radius: 20px;
+    border: 0.3px solid var(--font2);
+    background-color: var(--box1);
+    width: 70px;
+    height: 25px;
+    margin-left: 10px;
+    align-items: center;
+    display: flex;
+    border: var(--bordtest);
+}
+#txtseach{
+    background-color: var(--box1);
+    box-sizing: border-box;
+    border: none;    
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    blink
+}
+#botseach{
+    position: relative;
+    background-image:url(imagens/lupa.jpg) ;
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    border: none; 
 }
 #log{
-    
+    display: flex;
+    border: var(--bordtest);
+    color: var(--font2);
+    gap: 10px;
+    flex-shrink:0;
 }
-
+#menuhambur{
+    background-image: url(imagens/sandwich-menu-icon-1.jpg) ;
+    background-color: var(--box1);
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    border: none;
+    background-repeat: no-repeat;
+}
+#menunew{
+    position: absolute;
+    width: 100vw;
+    background-color: var(--box1);
+    top: 90%;
+    display: none;
+}
 body{
     background-color: #1b1b1b;
-    /* color: aliceblue; */
+
 }
 main>:nth-child(2n){
     background-color: var(--box2)
@@ -116,11 +187,7 @@ main>:nth-child(2n){
     color: #CDCDCD;
     margin-bottom:1%;
 }
-@media (max-width:750px){
-    #your2 > h2{
-        font:var(--texto21)
-    }
-}
+
 .botYour{
     display: inline-block;
     width: 240px;
@@ -167,14 +234,6 @@ main>:nth-child(2n){
     
 }
 
-@media (max-width: 1050px) {
-    #planos {
-       display: grid;
-        width: 100vw;
-        align-items: center;
-        justify-content: center;
-    }
-}
 
 .plano {
     border-radius: 10px;
@@ -186,7 +245,6 @@ main>:nth-child(2n){
     margin-left: 8px;
     padding-top: 0px;
     list-style-type: decimal;
-    /* justify-content: left; */
 }
 #Core{
     background-color: #00d061;
@@ -246,4 +304,114 @@ footer {
 ol{
     
     list-style: none;
-} 
+}
+ /*Responsividade  */
+@media (max-width: 1050px) {
+    #planos {
+       display: grid;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width:1100px){
+#containerMenu{
+    display: grid;
+}
+header{
+    height: 90px;
+}
+}
+@media (max-width: 1000px) {
+    #containernavegação{
+        display: none;
+    }
+    header{
+    height: 60px;
+    }
+    #containerMenu{
+    display: flex; 
+    position: relative;
+    }
+    #containerMenu #manupeq{
+    position: absolute;
+    left: 90%;
+    align-self: center;
+
+    }
+}
+@media (max-width:750px){
+    #your2 > h2{
+        font:var(--texto21)
+    }
+}
+
+
+/* controles */
+#ajuste::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#cdcdcd81;
+    opacity: 0;
+    border-radius: 5px;
+}
+#ajuste:hover::after{
+    opacity: 1;
+}
+
+#botseach::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#cdcdcd81;
+    opacity: 0;
+    border-radius: 5px;
+}
+#botseach:hover::after{
+    opacity: 1;
+}
+
+/* #manupeq::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#cdcdcd81;
+    opacity: 0;
+    border-radius: 5px;
+    padding: 10px;
+    transform: translate(-25%, -25% );
+    cursor: pointer;
+}
+#manupeq:hover::after{
+    opacity: 1;
+} */
+
+
+.botmenu:hover{
+    background-color: var(--box4);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+}
+#seach:active{
+    width: 200px;
+    align-items:center;
+    #txtseach{
+        width: 200px;
+        color: var(--font2);
+    }
+}
+#manupeq:active + #menunew{ 
+      display: block;
+    
+}
