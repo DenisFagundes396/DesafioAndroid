@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+@media screen and (orientation:landscape){
+    body{
+        background: url(../imagens/back-pc.jpg) center center no-repeat;
+        background-size: cover;
+    }
+    img#pc{
+        display: block;
+    }
+}
+
+@media screen and (orientation:portrait) {
+
+    img#fone{
+        display:block;
+    }
+    nav{
+        display: none;
+        margin: auto;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){  /*tablet */
+        body{
+        background: url(../imagens/back-tablet.jpg) center center no-repeat;
+        background-size: cover;
+    }
+        img#tablet{display:block;}
+        img#pc{display: none;}
+        img#fone{display:none; }
+        main::after{content: 'Este e um teste de escrita';}
+    
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){  /*pc */
+    
+}
+@media screen and (min-width: 1200px) {  /*tv */
+    
+}

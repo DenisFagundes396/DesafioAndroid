@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* Configurações aula */
+html{
+
+    height: 100vh;
+}
+
+body{
+    background: black url(../imagens/back-phone.jpg) center center no-repeat;
+    background-size: cover;
+}
+main{
+    background-color: rgba(255, 255, 255, 0.824);
+    border-radius:10px ;
+    width: 90vw;
+    margin: auto;
+    padding: 10px;
+}
+img{
+    display: block;
+    margin: auto;
+}
+img.icon_icon{display: none;}
+h1{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* img#fone {display: none;}
+img#tablet {display: none;}
+img#print {display: none;}
+img#pc {display: none;}
+img#tv {display: none;} */
+
+/* Configuraçõeew personalizadas */
+
+
+#menu{
+    display: none;
+    margin-top: 100px;
+}

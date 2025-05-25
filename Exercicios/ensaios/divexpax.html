@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Snap</title>
+    <style>
+        .container {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            width: 100%;
+            gap: 10px;
+        }
+
+        .item {
+            flex: 0 0 100%;
+            scroll-snap-align: start;
+            background: lightblue;
+            padding: 50px;
+            font-size: 24px;
+            text-align: center;
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+</body>
+</html>

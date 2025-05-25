@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query com menu</title>
+    <link rel="stylesheet" href="stylos/estilizar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+<header>
+    <h1>Meu site</h1>
+    <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</span>
+    <span class="material-symbols-outlined" id="MClose" onclick="clickClose()">close</span>
+    <nav id="listaMenu">
+        <ul>
+            <li><a href="#">Opção1</a></li>
+            <li><a href="#">Opção2</a></li>
+            <li><a href="#">Opção3</a></li>
+            <li><a href="#">Opção4</a></li>
+            <li><a href="#">Opção5</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <h2>Teestando site</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tempora dolores repudiandae voluptatum similique excepturi reiciendis harum nihil! Perspiciatis reprehenderit expedita tenetur mollitia consectetur quas distinctio provident laudantium recusandae amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vero nobis expedita provident necessitatibus totam qui, harum voluptas, soluta voluptates doloremque, odio rem? Est odio, illum nesciunt tempora hic reprehenderit!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed modi sint blanditiis repellendus officia quidem placeat similique porro tenetur ab, eligendi at quod deleniti quisquam aliquid libero adipisci distinctio sunt.</p>
+    </section>
+</main>
+<footer></footer>
+<script>
+    function clickMenu(){
+        listaMenu.style.display = "block";
+        burguer.style.display = "none";
+        MClose.style.display="block";
+    }
+    function clickClose(){
+        listaMenu.style.display = "none";
+        burguer.style.display = "block";
+        MClose.style.display="none";
+    }
+
+</script>   
+</body>
+</html>
