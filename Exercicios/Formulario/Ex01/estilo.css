@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+body {
+    /* width: 80%; */
+    margin: auto;
+}
+
+.main__titulo {
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+.main__button--titulo {
+    width: 100%;
+    display: flex;
+    background-color: white;
+    margin-bottom: 0px;
+    border: none;
+    text-align: left;
+    gap: 80%;
+    font-size: 21px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.main__bloco {
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+
+.main__item {
+    position: relative;
+    height: 120px;
+    min-width: 160px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.main__input--number-last {
+    position: absolute;
+    height: 30px;
+    width: 45px;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 0px;
+    display: inline-block;
+    left: 65%;
+    top: 68%;
+    text-align: left;
+    border: 0.5px solid gray;
+    border-radius: 3px;
+}
+
+.main__input--number-stock {
+    position: absolute;
+    height: 30px;
+    width: 45px;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 0px;
+    left: 65%;
+    top: 3%;
+    border: 0.5px solid gray;
+    border-radius: 3px;
+}
+
+.main__input--number-check {
+    height: 30px;
+    width: 45px;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 0px;
+    margin-top:2%;
+    margin-left:2%;
+    border: 0.5px solid gray;
+    border-radius: 3px;
+}
+
+/* Comandos Mouse */
+.main__button--titulo:hover {
+    background-color: gray;
+    margin-bottom: 10px;
+    box-shadow: none;
+}
+.main__input--number-check:hover{
+    scale: 250%;
+    width: 45px;
+}
+.main__input--number-stock:hover{
+    scale: 250%;
+    width: 45px;
+}
+.main__input--number-last:hover{
+    scale: 250%;
+    width: 45px;
+}
+
+/* imagens */
+#maint__item--1-1{
+    background-image: url(imagens/doritos-flamin-hot.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
