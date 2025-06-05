@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 body {
-    /* width: 80%; */
     margin: auto;
 }
 
@@ -30,18 +29,35 @@ body {
     width: 100%;
     height: auto;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 30px;
 
 }
 
 .main__item {
     position: relative;
     height: 120px;
-    min-width: 160px;
+    min-width: 180px;
     border: 1px solid gray;
     border-radius: 3px;
+    background-color: rgba(255, 0, 0, 0.7);
 }
-
+.main__item--span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-align: center;
+}
+.main__item--text{
+    position: absolute;
+    top: 68%;
+    left: 3%;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    font-size: 21px;
+}
 .main__input--number-last {
     position: absolute;
     height: 30px;
@@ -76,8 +92,8 @@ body {
     font-size: 20px;
     padding-left: 5px;
     padding-right: 0px;
-    margin-top:2%;
-    margin-left:2%;
+    margin-top: 2%;
+    margin-left: 2%;
     border: 0.5px solid gray;
     border-radius: 3px;
 }
@@ -88,23 +104,29 @@ body {
     margin-bottom: 10px;
     box-shadow: none;
 }
-.main__input--number-check:hover{
-    scale: 250%;
-    width: 45px;
-}
-.main__input--number-stock:hover{
-    scale: 250%;
-    width: 45px;
-}
-.main__input--number-last:hover{
-    scale: 250%;
+
+.main__input--number-check:hover {
+    scale: 300%;
     width: 45px;
 }
 
+.main__input--number-stock:hover {
+    scale: 300%;
+    width: 45px;
+}
+
+.main__input--number-last:hover {
+    scale: 300%;
+    width: 45px;
+}
+.main__item--text:hover{
+    scale: 300%;
+    width: 65px;
+}
 /* imagens */
-#maint__item--1-1{
+/* #main__bloco--1-1{
     background-image: url(imagens/doritos-flamin-hot.webp);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-}
+} */
