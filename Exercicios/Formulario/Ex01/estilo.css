@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+html{
+    background-color: rgba(248, 232, 243);
+}
+
 body,
 html,
 header {
@@ -69,13 +73,13 @@ li {
 .main__button--titulo {
     width: 100%;
     display: flex;
-    background-color: white;
+    background-color: rgb(103,36,103);
     margin-bottom: 0px;
     border: none;
     text-align: left;
-
+    color: white;
     font-size: 21px;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 1px 5px rgba(224, 143, 224, 0.5);
 }
 
 .main__titulo--span {
@@ -170,7 +174,7 @@ li {
 
 /* Comandos Mouse */
 .main__button--titulo:hover {
-    background-color: gray;
+    background-color: rgb(162, 114, 174);
     margin-bottom: 10px;
     box-shadow: none;
     color: white;
