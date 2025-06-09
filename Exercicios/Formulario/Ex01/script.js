@@ -4,6 +4,10 @@ function bottonOpen(botao) {
     else { bloco.style.display = 'none' }
 }
 
+function OnMenu() {
+    document.getElementById("MenuMerc").style.display = 'block'
+}
+
 //Aplicar Check ao item de compra, e salvar a cor status
 function statusItem(maid) {
     let colorDiv = window.getComputedStyle(maid).backgroundColor;
@@ -24,22 +28,22 @@ function statusItem(maid) {
 
 // Salvar valor no localStorage ao alterar o input
 function salvarValor(input) {
-    localStorage.setItem(input.id, input.value);
+    localStorage.setItem(input.id, JSON.stringify(Number(input.value)));
 }
 
 // Recuperar O VALOR SALVO e aplicá-lo ao input quando a página carregar
 window.onload = function valor() {
-    for (let j = 1; j <= 8; j++) {
+    for (let j = 1; j <= 20; j++) {
         for (let i = 1; i <= 20; i++) {
             let input = document.getElementById("main__item--" + j + "-" + i);
             if (input) {
                 let valorSalvo = localStorage.getItem(input.id);
-                console.log("valores feito");
+                console.log("Cores feito");
                 input.value = valorSalvo;
             }
         }
     }
-    for (let y = 1; y <= 8; y++) {
+    for (let y = 1; y <= 20; y++) {
         for (let x = 1; x <= 20; x++) {
             let bloco = document.getElementById("main__bloco--" + y + "-" + x);
             if (bloco) {
@@ -50,20 +54,32 @@ window.onload = function valor() {
             }
         }
     }
+    let resultado = document.getElementById("soma");
+    let soma = 0
+    let multi = 0
     for (let a = 1; a <= 20; a++) {
-        console.log("valor de a: " + a);
+        c = 0
         for (let b = 1; b <= 20; b++) {
-            console.log("valor de b: " + b);
             let bloco = document.getElementById("main__itemCusto--" + a + "-" + b);
             if (bloco) {
-                let valorSalvo = localStorage.getItem(bloco.id);
+                let valorSalvo = JSON.parse(localStorage.getItem(bloco.id));
                 if (valorSalvo)
+                    c = c+3;
+                    let itemLast = document.getElementById("main__item--" + a + "-" + c);
+                    let last = JSON.parse(localStorage.getItem(itemLast.id));
+                    if (last)
+                        multi = Number(valorSalvo) * Number(last);
+                    soma = soma + multi;
+                    bloco.value = valorSalvo;
                     console.log("main__itemCusto--" + a + "-" + b);
-                console.log(valorSalvo);
-                bloco.value = valorSalvo;
+                    console.log("main__item--" + a + "-" + c);
+                    console.log("Custo do produto: " + valorSalvo);
+                    console.log("last :" + last)
+                    console.log("Valor de soma é: " + soma);
+                    resultado.value = soma;
+                }
             }
         }
-    }
 }
 
 // Recuperar A COR SALVA e aplicá-lo ao input quando a página carregar

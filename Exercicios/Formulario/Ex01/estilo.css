@@ -1,12 +1,69 @@
 @charset "utf-8";
 
-body {
-    margin: auto;
+body,
+html,
+header {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+   margin-top:0px ;
+   margin-bottom: 10px;
+}
+
+header,p {
+    padding-top: 0px;
+    margin-top: 0px;
+     background-color:rgb(211, 211, 211) ;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100%;
+}
+
+.nav__button--menu {
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(70, 70, 70);
+    border: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white;
+}
+
+#MenuMerc {
+    display: none;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+
+li {
+    border: 1px solid rgb(128, 128, 128);
+    text-align: center;
+    background-color: rgb(98, 97, 97);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+.main__soma{
+    font-size: 20px;
+    margin: 10px;
+}
+
+#soma{
+    width: 100px;
+    font-size: 20px;
 }
 
 .main__titulo {
     /* border: 1px solid black; */
-    width: 100%;
+    width: 90%;
+    margin: auto;
 }
 
 .main__button--titulo {
@@ -16,9 +73,19 @@ body {
     margin-bottom: 0px;
     border: none;
     text-align: left;
-    gap: 80%;
+
     font-size: 21px;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.main__titulo--span {
+    width: 50%;
+}
+
+.material-symbols-outlined {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
 }
 
 .main__bloco {
@@ -41,6 +108,7 @@ body {
     border-radius: 3px;
     background-color: rgba(255, 0, 0, 0.7);
 }
+
 .main__item--span {
     position: absolute;
     top: 50%;
@@ -49,7 +117,8 @@ body {
     font-size: 20px;
     text-align: center;
 }
-.main__item--text{
+
+.main__item--text {
     position: absolute;
     top: 68%;
     left: 3%;
@@ -58,19 +127,20 @@ body {
     text-align: center;
     font-size: 21px;
 }
+
 .main__input--number-last {
     position: absolute;
     height: 30px;
-    width: 45px;
+    width: 30px;
     font-size: 20px;
     padding-left: 5px;
     padding-right: 0px;
     display: inline-block;
-    left: 65%;
+    left: 77%;
     top: 68%;
     text-align: left;
     border: 0.5px solid gray;
-    border-radius: 3px;
+    border-radius: 30px;
 }
 
 .main__input--number-stock {
@@ -103,7 +173,13 @@ body {
     background-color: gray;
     margin-bottom: 10px;
     box-shadow: none;
+    color: white;
 }
+
+li:hover {
+    background-color: gray;
+}
+
 
 .main__input--number-check:hover {
     scale: 300%;
@@ -118,11 +194,14 @@ body {
 .main__input--number-last:hover {
     scale: 300%;
     width: 45px;
+    border-radius: 0px;
 }
-.main__item--text:hover{
+
+.main__item--text:hover {
     scale: 300%;
     width: 65px;
 }
+
 /* imagens */
 /* #main__bloco--1-1{
     background-image: url(imagens/doritos-flamin-hot.webp);
